@@ -1,0 +1,5 @@
+---
+- name: ensure the ansible
+  apt:
+    name: ansible
+    state: latest

@@ -1,0 +1,7 @@
+---
+- name: set the reboot itself
+  cron:
+    name: reboot the own
+    hour: 0
+    job: shutdown -r 5
+  become: yes

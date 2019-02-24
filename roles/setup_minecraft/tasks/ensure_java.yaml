@@ -1,0 +1,5 @@
+---
+- name: encure the java
+  apt:
+    name: default-jre
+    state: latest

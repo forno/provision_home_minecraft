@@ -1,0 +1,12 @@
+---
+- name: copy this ansible codes to the server
+  git:
+    repo: "{{ ansible_repository }}"
+    dest: "{{ ansible_directory }}"
+    depth: 1
+    force: yes
+- name: set the cron for reboot to minecraft server
+  cron:
+    name: reboot the server
+    hour: 12
+    job: "cd {{ ansible_directory }}; ansible-playbook reboot.play"

@@ -1,0 +1,4 @@
+---
+- include: ensure_ansible.yaml
+- include: set_reboot_minecraft_cron.yaml
+- include: set_reboot_itself_cron.yaml
