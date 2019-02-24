@@ -2,7 +2,7 @@
 ansible_python_interpreter=/usr/bin/python3
 
 [minecraft]
-internal.xmaho.link
+minecraft.xmaho.link
 
 [manager]
-internal.xmaho.link
+minecraft.xmaho.link
