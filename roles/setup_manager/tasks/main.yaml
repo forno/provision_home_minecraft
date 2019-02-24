@@ -1,4 +1,5 @@
 ---
+- include: set_timezone_to_asia_tokyo.yaml
 - include: ensure_ansible_on_apt.yaml
   when: ansible_facts['os_family'] == 'Debian'
 - include: ensure_ansible_on_pip.yaml

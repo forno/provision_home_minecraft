@@ -8,5 +8,6 @@
 - name: set the cron for reboot to minecraft server
   cron:
     name: reboot the server
+    minute: 0
     hour: 12
     job: "cd {{ ansible_directory }}; ansible-playbook reboot.play --vault-id {{ ansible_key_path }}"
