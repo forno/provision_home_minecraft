@@ -2,6 +2,6 @@
 - name: set the reboot itself
   cron:
     name: reboot the own
-    hour: 0
+    special_time: weekly
     job: shutdown -r 5
   become: yes

@@ -1,10 +1,12 @@
 ---
 - name: download minecraft data
   git:
-    repo: "{{ minecraft_repository }}"
+    repo: "{{ item }}" # avoid hangup
     dest: "{{ minecraft_directory }}"
     depth: 1
   ignore_errors: True
+  loop:
+  - "{{ minecraft_repository }}"
 - name: set the user.name of git
   git_config:
     name: user.name
