@@ -6,6 +6,7 @@
   command: "git commit -m 'Shutdown data: {{ ansible_date_time.iso8601 }}'"
   args:
     chdir: "{{ minecraft_directory }}"
+  ignore_errors: yes
 - name: push the repository
   command: "git push https://{{ git_user }}:{{ git_token }}@{{ minecraft_repository }} master"
   args:
