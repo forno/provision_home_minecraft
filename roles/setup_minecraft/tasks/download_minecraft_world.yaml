@@ -6,7 +6,7 @@
     depth: 1
   ignore_errors: True
   loop:
-  - "{{ minecraft_repository }}"
+  - "{{ git_protocol }}://{{ minecraft_repository }}"
 - name: set the user.name of git
   git_config:
     name: user.name

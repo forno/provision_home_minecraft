@@ -8,6 +8,6 @@
     chdir: "{{ minecraft_directory }}"
   ignore_errors: yes
 - name: push the repository
-  command: "git push https://{{ git_user }}:{{ git_token }}@{{ minecraft_repository }} master"
+  command: "git push {{ git_protocol }}://{{ git_user }}:{{ git_token }}@{{ minecraft_repository }} master"
   args:
     chdir: "{{ minecraft_directory }}"
