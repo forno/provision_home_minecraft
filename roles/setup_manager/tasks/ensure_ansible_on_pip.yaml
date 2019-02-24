@@ -1,0 +1,10 @@
+---
+- name: ensure the lastest pip
+  easy_install:
+    name: pip
+    state: latest
+  ignore_errors: yes
+- name: ensure the lastest ansible
+  pip:
+    name: ansible
+    state: latest

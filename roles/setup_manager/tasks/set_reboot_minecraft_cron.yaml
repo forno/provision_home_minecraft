@@ -9,4 +9,4 @@
   cron:
     name: reboot the server
     hour: 12
-    job: "cd {{ ansible_directory }}; ansible-playbook reboot.play"
+    job: "cd {{ ansible_directory }}; ansible-playbook reboot.play --vault-id {{ ansible_key_path }}"
