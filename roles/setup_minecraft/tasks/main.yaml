@@ -1,5 +1,5 @@
 ---
-- include: ensure_java.yaml
+- include: ensure_requires.yaml
 - include: ensure_minecraft_user.yaml
 - include: download_minecraft_world.yaml
   become: yes

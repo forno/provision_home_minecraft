@@ -1,0 +1,7 @@
+---
+- name: encure the requires
+  apt:
+    name:
+    - default-jre
+    - screen
+    state: latest
