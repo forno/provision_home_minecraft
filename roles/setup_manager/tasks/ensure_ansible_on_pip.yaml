@@ -4,7 +4,7 @@
     name: pip
     state: latest
   ignore_errors: yes
-- name: ensure the lastest ansible
+- name: ensure the lastest ansible on pip
   pip:
     name: ansible
     state: latest

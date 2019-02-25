@@ -1,2 +1,3 @@
-ansible_directory: $HOME/ws/provision
+---
+ansible_directory: $HOME/ws/provision_home_minecraft
 ansible_repository: https://github.com/forno/provision_home_minecraft.git
