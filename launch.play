@@ -1,6 +1,0 @@
----
-- hosts: minecraft
-  become: yes
-  become_user: "{{ execute_user }}"
-  roles:
-  - launch_minecraft
